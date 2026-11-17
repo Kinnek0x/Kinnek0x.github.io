@@ -3,7 +3,7 @@
   "projetos": [
     {
       "titulo": "Mercearia Online",
-      "resumo": "Loja online para uma mercearia de bairro: os clientes encomendam sem criar conta e pagam na entrega, e a loja gere encomendas, stock e produtos num painel de administração. Feita sem frameworks, bilingue (PT/EN) e pensada para o telemóvel.",
+      "resumo": "Loja online para uma mercearia de bairro: os clientes encomendam sem criar conta e pagam na entrega, e a loja gere encomendas, stock e produtos num painel de administração. Desenvolvida sem frameworks, bilingue (PT/EN) e otimizada para telemóvel.",
       "tags": ["PHP 8", "MySQL", "JavaScript", "HTML", "CSS"],
       "estado": "concluido",
       "destaque": true,
@@ -11,12 +11,12 @@
       "imagemAlt": "Página inicial da Mercearia Online com produtos e carrinho",
       "codigo": "https://github.com/Kinnek0x/mercearia-online",
       "seguranca": [
-        "SQL injection bloqueado com prepared statements (PDO) em todas as consultas",
-        "XSS travado com escape na saída e Content-Security-Policy",
-        "Tokens CSRF em todas as ações de administração",
-        "Login bloqueado após 5 tentativas falhadas em 15 minutos",
-        "Uploads validados pelo conteúdo real do ficheiro",
-        "Preços e totais sempre recalculados no servidor"
+        "Proteção contra SQL injection com prepared statements (PDO) em todas as consultas",
+        "Mitigação de XSS com escape na saída e Content-Security-Policy",
+        "Proteção contra CSRF com tokens em todas as ações de administração",
+        "Bloqueio do início de sessão após 5 tentativas falhadas em 15 minutos",
+        "Validação de uploads pelo conteúdo real do ficheiro",
+        "Recálculo de preços e totais no servidor"
       ]
     },
     {
