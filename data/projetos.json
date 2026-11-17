@@ -1,0 +1,42 @@
+{
+  "_ajuda": "Para acrescentar um projeto: copie um bloco. estado = \"concluido\" (precisa de link ou codigo, só https) ou \"em-breve\". destaque = true ocupa a largura toda. imagem = caminho dentro de assets/img/.",
+  "projetos": [
+    {
+      "titulo": "Mercearia Online",
+      "resumo": "Loja online para uma mercearia de bairro: os clientes encomendam sem criar conta e pagam na entrega, e a loja gere encomendas, stock e produtos num painel de administração. Feita sem frameworks, bilingue (PT/EN) e pensada para o telemóvel.",
+      "tags": ["PHP 8", "MySQL", "JavaScript", "HTML", "CSS"],
+      "estado": "concluido",
+      "destaque": true,
+      "imagem": "assets/img/mercearia-inicio.webp",
+      "imagemAlt": "Página inicial da Mercearia Online com produtos e carrinho",
+      "codigo": "https://github.com/Kinnek0x/mercearia-online",
+      "seguranca": [
+        "SQL injection bloqueado com prepared statements (PDO) em todas as consultas",
+        "XSS travado com escape na saída e Content-Security-Policy",
+        "Tokens CSRF em todas as ações de administração",
+        "Login bloqueado após 5 tentativas falhadas em 15 minutos",
+        "Uploads validados pelo conteúdo real do ficheiro",
+        "Preços e totais sempre recalculados no servidor"
+      ]
+    },
+    {
+      "titulo": "Este portfólio",
+      "resumo": "Site em HTML, CSS e JavaScript puros, sem frameworks nem dependências. Content-Security-Policy restrita, fontes e ícones locais, nenhum rastreamento e testes automáticos que impedem dados pessoais de serem publicados por engano.",
+      "tags": ["HTML", "CSS", "JavaScript", "Acessibilidade", "Segurança"],
+      "estado": "concluido",
+      "codigo": "https://github.com/Kinnek0x/Kinnek0x.github.io"
+    },
+    {
+      "titulo": "Home lab de suporte",
+      "resumo": "Windows Server com Active Directory e um servidor Linux em VirtualBox. Criação de utilizadores, reposição de palavras-passe, permissões e GPO, tudo documentado passo a passo.",
+      "tags": ["Windows Server", "Active Directory", "Linux", "VirtualBox"],
+      "estado": "em-breve"
+    },
+    {
+      "titulo": "Base de conhecimento",
+      "resumo": "Casos de suporte simulados, cada um com o problema, o diagnóstico e a solução, escritos como num sistema de tickets de Help Desk.",
+      "tags": ["Help Desk", "Documentação", "Troubleshooting"],
+      "estado": "em-breve"
+    }
+  ]
+}

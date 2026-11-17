@@ -1,0 +1,58 @@
+{
+  "_ajuda": "Para acrescentar uma competência: copie uma linha de 'itens' e mude o nome e o ícone. Ícones disponíveis: ver ICONES em js/conteudo.js. Use \"estado\": \"a-aprender\" para o que ainda está a estudar.",
+  "grupos": [
+    {
+      "nome": "Sistemas operativos",
+      "itens": [
+        { "nome": "Windows 10/11", "icone": "windows" },
+        { "nome": "Linux Mint", "icone": "linuxmint" },
+        { "nome": "Pop!_OS", "icone": "popos" },
+        { "nome": "Fedora", "icone": "fedora" },
+        { "nome": "Terminal Linux", "icone": "linux" },
+        { "nome": "PowerShell", "icone": "powershell" }
+      ]
+    },
+    {
+      "nome": "Redes",
+      "itens": [
+        { "nome": "TCP/IP", "icone": "network" },
+        { "nome": "DNS", "icone": "globe" },
+        { "nome": "DHCP", "icone": "server" },
+        { "nome": "Wi-Fi", "icone": "wifi" }
+      ]
+    },
+    {
+      "nome": "Suporte e hardware",
+      "itens": [
+        { "nome": "AnyDesk", "icone": "anydesk" },
+        { "nome": "TeamViewer", "icone": "teamviewer" },
+        { "nome": "Remote Desktop (RDP)", "icone": "monitor-smartphone" },
+        { "nome": "Montagem de PC", "icone": "cpu" },
+        { "nome": "Diagnóstico de avarias", "icone": "wrench" },
+        { "nome": "VirtualBox", "icone": "virtualbox" }
+      ]
+    },
+    {
+      "nome": "Desenvolvimento web",
+      "itens": [
+        { "nome": "HTML", "icone": "html5" },
+        { "nome": "CSS", "icone": "css" },
+        { "nome": "JavaScript", "icone": "javascript" },
+        { "nome": "PHP", "icone": "php" },
+        { "nome": "MySQL", "icone": "mysql" },
+        { "nome": "Git", "icone": "git" },
+        { "nome": "GitHub", "icone": "github-marca" },
+        { "nome": "Python", "icone": "python", "estado": "a-aprender" }
+      ]
+    },
+    {
+      "nome": "Produtividade",
+      "itens": [
+        { "nome": "Microsoft 365", "icone": "cloud" },
+        { "nome": "Excel", "icone": "file-spreadsheet" },
+        { "nome": "Word", "icone": "file-text" },
+        { "nome": "PowerPoint", "icone": "presentation" }
+      ]
+    }
+  ]
+}

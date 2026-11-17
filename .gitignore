@@ -1,0 +1,12 @@
+_originais/
+.superpowers/
+node_modules/
+.DS_Store
+*.log
+
+# Ficheiros de trabalho: ficam no computador, não vão para o GitHub público
+CLAUDE.md
+docs/superpowers/
+.impeccable/
+_perfil-github/
+.claude/

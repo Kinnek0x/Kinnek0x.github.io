@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="pt-PT" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Segurança: o GitHub Pages não permite cabeçalhos HTTP, por isso a CSP vai aqui.
+       Só se carregam ficheiros do próprio site. Não pôr scripts nem estilos inline. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Guilherme Fernandes · Suporte de TI e Cibersegurança</title>
+  <meta name="description" content="Guilherme Fernandes, técnico de suporte informático em Santa Maria da Feira. Procura a primeira função em Help Desk / Suporte N1, com foco em cibersegurança.">
+  <meta name="author" content="Guilherme Fernandes">
+  <meta name="theme-color" content="#0a0e16">
+  <link rel="canonical" href="https://kinnek0x.github.io/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Pré-visualização quando o link é partilhado (LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Guilherme Fernandes · Suporte de TI e Cibersegurança">
+  <meta property="og:description" content="Help Desk / Suporte N1 em Portugal. Atendimento, diagnóstico, redes e um projeto web feito com segurança desde o início.">
+  <meta property="og:url" content="https://kinnek0x.github.io/">
+  <meta property="og:image" content="https://kinnek0x.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" href="assets/fonts/outfit-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/tema.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+  <canvas id="particulas" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="contentor nav__linha">
+      <a class="marca" href="#topo" aria-label="Guilherme Fernandes, voltar ao início">
+        <span class="marca__ponto" aria-hidden="true"></span>guilherme fernandes
+      </a>
+      <nav aria-label="Secções">
+        <ul class="nav__links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#competencias">Competências</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#formacao">Formação</a></li>
+        </ul>
+      </nav>
+      <div class="nav__acoes">
+        <button class="botao-icone" id="alternar-tema" type="button" aria-label="Mudar para tema claro">
+          <span class="ico i-sun" aria-hidden="true"></span>
+        </button>
+        <a class="botao botao--principal botao--pequeno" href="#contacto">Contactar</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- TOPO -->
+    <section class="topo contentor" id="topo">
+      <div class="topo__texto">
+        <p class="estado"><span class="estado__ponto" aria-hidden="true"></span>Disponível para Help Desk / Suporte N1</p>
+        <h1>Guilherme<br><span class="destaque">Fernandes</span></h1>
+        <p class="papel">Suporte de TI <span aria-hidden="true">›</span><span class="sr">, a caminho de</span> Cibersegurança</p>
+        <p class="topo__lead">Resolvo problemas de quem usa tecnologia, com paciência e método. Venho do atendimento e do diagnóstico de equipamentos, formei-me em Web Development e estudo redes e segurança para proteger os sistemas que suporto.</p>
+        <div class="acoes">
+          <a class="botao botao--principal" href="#projetos">Ver projetos</a>
+          <a class="botao" href="assets/cv/Guilherme_Fernandes_CV_Site.pdf" download="Guilherme_Fernandes_CV.pdf" type="application/pdf"><span class="ico i-download" aria-hidden="true"></span>Descarregar CV</a>
+          <a class="botao botao--fantasma" href="https://www.linkedin.com/in/guilherme-fernandes-099040249/" target="_blank" rel="noopener noreferrer">
+            <span class="ico i-linkedin" aria-hidden="true"></span>LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="terminal" role="img" aria-label="Terminal a mostrar os comandos whoami, cat competencias.txt, ping, nmap ao próprio laboratório e estado.sh">
+        <div class="terminal__barra" aria-hidden="true">
+          <span></span><span></span><span></span>
+          <p>guilherme@lab: ~</p>
+        </div>
+        <pre class="terminal__ecra" id="terminal" aria-hidden="true"></pre>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="seccao contentor revelar" id="sobre" aria-labelledby="t-sobre">
+      <p class="sobrelinha">Quem sou</p>
+      <h2 id="t-sobre">Sobre mim</h2>
+      <div class="sobre">
+        <img class="sobre__foto" src="assets/img/guilherme.webp" width="320" height="320" alt="Fotografia do Guilherme Fernandes a sorrir, de camisola branca de gola alta" loading="lazy" decoding="async">
+        <div class="sobre__texto">
+          <p>Sou o Guilherme, vivo em Santa Maria da Feira e procuro a minha primeira função em <strong>Help Desk / Suporte Técnico N1</strong>. Nos últimos anos trabalhei sempre com pessoas: aconselhei clientes e fiz o diagnóstico inicial de equipamentos na Auchan, e dei apoio telefónico a motoristas no terreno numa empresa de transportes.</p>
+          <p>O que levo para uma equipa de suporte: explico tecnologia de forma simples a quem não é técnico, acompanho cada problema até estar resolvido e trato a segurança como parte do trabalho. No meu projeto final de Web Development, uma loja online em PHP e MySQL, protegi-a contra SQL injection, XSS, CSRF e ataques de força bruta desde o primeiro dia.</p>
+          <ul class="factos">
+            <li><span class="ico i-map-pin" aria-hidden="true"></span><span><strong>Santa Maria da Feira</strong>, zona do Porto e Aveiro</span></li>
+            <li><span class="ico i-monitor" aria-hidden="true"></span><span>Presencial, híbrido ou remoto</span></li>
+            <li><span class="ico i-car" aria-hidden="true"></span><span>Carta de condução B e viatura própria</span></li>
+            <li><span class="ico i-globe" aria-hidden="true"></span><span>Português nativo · Inglês básico, em estudo diário</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="seccao contentor revelar" id="experiencia" aria-labelledby="t-experiencia">
+      <p class="sobrelinha">Percurso</p>
+      <h2 id="t-experiencia">Experiência</h2>
+      <ol class="linha-tempo">
+        <li class="linha-tempo__item">
+          <p class="linha-tempo__data"><time datetime="2025-09">set 2025</time> – <time datetime="2026-05">mai 2026</time></p>
+          <h3>Vendedor de Equipamento Tecnológico</h3>
+          <p class="linha-tempo__empresa">Auchan Retail Portugal</p>
+          <ul>
+            <li>Diagnóstico inicial de equipamentos com suspeita de avaria: perceber se o problema era defeito, configuração ou utilização.</li>
+            <li>Suporte pós-venda: esclarecer dúvidas técnicas e apoiar clientes depois da compra.</li>
+            <li>Aconselhamento técnico na escolha de computadores, telemóveis e outros equipamentos, conforme a necessidade de cada cliente.</li>
+          </ul>
+        </li>
+        <li class="linha-tempo__item">
+          <p class="linha-tempo__data"><time datetime="2023-08">ago 2023</time> – <time datetime="2024-06">jun 2024</time></p>
+          <h3>Assistente Administrativo</h3>
+          <p class="linha-tempo__empresa">Grupo Ferramacho · Transportes</p>
+          <ul>
+            <li>Apoio telefónico a motoristas na resolução de problemas no terreno, como moradas difíceis de encontrar ou clientes ausentes.</li>
+            <li>Folhas de cálculo em Excel e apresentações em PowerPoint para a equipa.</li>
+            <li>Contacto com clientes e apoio à coordenação logística.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- COMPETÊNCIAS (desenhadas a partir de data/competencias.json) -->
+    <section class="seccao contentor revelar" id="competencias" aria-labelledby="t-competencias">
+      <p class="sobrelinha">Ferramentas</p>
+      <h2 id="t-competencias">Competências</h2>
+      <p class="seccao__intro">Ferramentas que já usei na prática. O que ainda estou a aprender está assinalado.</p>
+      <div id="lista-competencias" class="competencias" aria-live="polite"></div>
+      <noscript><p class="aviso">Ative o JavaScript para ver a lista de competências, ou consulte o meu <a href="https://github.com/Kinnek0x">GitHub</a>.</p></noscript>
+    </section>
+
+    <!-- PROJETOS (desenhados a partir de data/projetos.json) -->
+    <section class="seccao contentor revelar" id="projetos" aria-labelledby="t-projetos">
+      <p class="sobrelinha">Trabalho</p>
+      <h2 id="t-projetos">Projetos</h2>
+      <p class="seccao__intro">Cada projeto mostra o que sei fazer. Esta lista vai crescer à medida que termino os próximos.</p>
+      <div id="lista-projetos" class="projetos" aria-live="polite"></div>
+      <noscript><p class="aviso">Ative o JavaScript para ver os projetos, ou veja-os no meu <a href="https://github.com/Kinnek0x">GitHub</a>.</p></noscript>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section class="seccao contentor revelar" id="formacao" aria-labelledby="t-formacao">
+      <p class="sobrelinha">Estudos</p>
+      <h2 id="t-formacao">Formação</h2>
+      <ul class="formacao">
+        <li>
+          <h3>Web Development</h3>
+          <p class="formacao__onde">MasterD, Faro · <time datetime="2024-06">jun 2024</time> – <time datetime="2025-10">out 2025</time></p>
+          <p>Projeto final: a Mercearia Online, uma loja com encomendas, stock e painel de administração.</p>
+        </li>
+        <li>
+          <h3>Analista de Suporte Técnico</h3>
+          <p class="formacao__onde">Start Capacitação Profissional, Rio de Janeiro · <time datetime="2017-07">jul 2017</time> – <time datetime="2018-02">fev 2018</time></p>
+        </li>
+        <li>
+          <h3>Informática e Pacote Office</h3>
+          <p class="formacao__onde">Start Capacitação Profissional, Rio de Janeiro · <time datetime="2015-06">jun 2015</time> – <time datetime="2016-03">mar 2016</time></p>
+        </li>
+        <li>
+          <h3>Redes de computadores</h3>
+          <p class="formacao__onde">Estudo autodidata</p>
+          <p>TCP/IP, endereçamento, DNS, DHCP e segurança de redes.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- A ESTUDAR -->
+    <section class="seccao contentor revelar" id="estudo" aria-labelledby="t-estudo">
+      <p class="sobrelinha">Próximos passos</p>
+      <h2 id="t-estudo">A estudar agora</h2>
+      <ul class="estudo">
+        <li class="estudo__item">
+          <span class="etiqueta etiqueta--ativo">Em curso</span>
+          <h3>Python</h3>
+          <p>Scripts para automatizar tarefas de suporte, como inventário de máquinas e verificações de rede.</p>
+        </li>
+        <li class="estudo__item">
+          <span class="etiqueta etiqueta--ativo">Em curso</span>
+          <h3>Inglês</h3>
+          <p>Estudo diário, para ler documentação técnica e conseguir dar suporte em inglês.</p>
+        </li>
+        <li class="estudo__item">
+          <span class="etiqueta">Planeado</span>
+          <h3>Primeira certificação</h3>
+          <p>Uma certificação de entrada em suporte ou cibersegurança, para validar o que estou a estudar.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="seccao contentor revelar" id="contacto" aria-labelledby="t-contacto">
+      <div class="contacto">
+        <p class="sobrelinha">Contacto</p>
+        <h2 id="t-contacto">Vamos falar?</h2>
+        <p class="contacto__lead">Se procura alguém para a sua equipa de suporte, envie-me um e-mail ou uma mensagem no LinkedIn, ou descarregue o meu CV. Respondo depressa.</p>
+        <div class="email">
+          <a class="email__endereco" href="mailto:guilhermegrafica57@gmail.com" id="email">guilhermegrafica57@gmail.com</a>
+          <button class="botao botao--pequeno" id="copiar-email" type="button">
+            <span class="ico i-copy" aria-hidden="true"></span><span class="copiar__texto">Copiar</span>
+          </button>
+        </div>
+        <p class="sr" id="copiar-estado" role="status"></p>
+        <div class="acoes acoes--centro">
+          <a class="botao botao--principal" href="mailto:guilhermegrafica57@gmail.com"><span class="ico i-mail" aria-hidden="true"></span>Enviar e-mail</a>
+          <a class="botao" href="assets/cv/Guilherme_Fernandes_CV_Site.pdf" download="Guilherme_Fernandes_CV.pdf" type="application/pdf"><span class="ico i-download" aria-hidden="true"></span>Descarregar CV</a>
+          <a class="botao" href="https://www.linkedin.com/in/guilherme-fernandes-099040249/" target="_blank" rel="noopener noreferrer"><span class="ico i-linkedin" aria-hidden="true"></span>LinkedIn</a>
+          <a class="botao" href="https://github.com/Kinnek0x" target="_blank" rel="noopener noreferrer"><span class="ico i-github" aria-hidden="true"></span>GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="contentor rodape__linha">
+      <p>© <span id="ano">2026</span> Guilherme Fernandes</p>
+      <p>Feito com HTML, CSS e JavaScript, sem rastreamento. <a href="https://github.com/Kinnek0x/Kinnek0x.github.io" target="_blank" rel="noopener noreferrer">Ver o código</a></p>
+    </div>
+  </footer>
+</body>
+</html>

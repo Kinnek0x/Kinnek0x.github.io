@@ -1,0 +1,9 @@
+{
+  "name": "portfolio-guilherme-fernandes",
+  "private": true,
+  "type": "module",
+  "description": "Portfólio estático. Node só é usado para correr os testes.",
+  "scripts": {
+    "test": "node --test tests/"
+  }
+}
